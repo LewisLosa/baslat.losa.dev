@@ -53,7 +53,6 @@ echo -------------------------------------------------
 timeout 2 > nul
 color 7
 java -Xmx%a%G %before% -jar %b% %after% %c%
-PAUSE
 ping -n 1 127.1>nul
 set ret=11
 :re2
