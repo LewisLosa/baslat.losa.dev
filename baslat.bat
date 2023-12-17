@@ -11,6 +11,10 @@ set a=8
 rem Sunucu başlatma yazılımının ismi nedir?
 set b=sunucu.jar
 
+rem Javanın konumunu tırnaklı şekilde girin.
+rem Örnek: "C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin\java.exe"
+set java=
+
 rem Konsol renklerini kapatmak için 11. satırdaki "rem" ifadesini kaldırın
 
 rem set c=nogui
@@ -52,7 +56,7 @@ echo %pl%
 echo -------------------------------------------------
 timeout 2 > nul
 color 7
-java -Xmx%a%G %before% -jar %b% %after% %c%
+%java% -Xmx%a%G %before% -jar %b% %after% %c%
 ping -n 1 127.1>nul
 set ret=11
 :re2
