@@ -12,8 +12,9 @@ rem Sunucu başlatma yazılımının ismi nedir?
 set b=sunucu.jar
 
 rem Javanın konumunu tırnaklı şekilde girin.
-rem Örnek: "C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin\java.exe"
-set java=
+rem Örnek: java="C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin\java.exe"
+rem java=java yazıyorsa varsayılan olan javayı çalıştıracaktır.
+set java=java
 
 rem Konsol renklerini kapatmak için 11. satırdaki "rem" ifadesini kaldırın
 
