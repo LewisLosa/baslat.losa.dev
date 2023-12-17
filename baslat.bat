@@ -11,6 +11,11 @@ set a=8
 rem Sunucu başlatma yazılımının ismi nedir?
 set b=sunucu.jar
 
+rem Uyarılarda sunucu yeniden başlatılması için kaç saniye bekletilsin?
+rem Saniye cinsinden değer girin.
+rem Örnek: ret=6
+set ret=11
+
 rem Javanın konumunu tırnaklı şekilde girin.
 rem Örnek: java="C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin\java.exe"
 rem java=java yazıyorsa varsayılan olan javayı çalıştıracaktır.
@@ -59,7 +64,6 @@ timeout 2 > nul
 color 7
 %java% -Xmx%a%G %before% -jar %b% %after% %c%
 ping -n 1 127.1>nul
-set ret=11
 :re2
 
 rem NEQ eşit değil anlamına gelir
